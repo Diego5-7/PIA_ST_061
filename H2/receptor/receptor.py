@@ -2,7 +2,7 @@ import cv2
 
 def main():
 
-    fuente = 0
+    fuente = 1
 
     cap = cv2.VideoCapture(fuente)
     

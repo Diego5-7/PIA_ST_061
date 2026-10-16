@@ -1,8 +1,13 @@
 import cv2
 
 def main():
-
-    fuente = 1
+ opcion = input("Elige el número de fuente (0 para laptop, 1 para celular):").strip()
+    if opcion == "1":
+        fuente = 1
+        print("Camara de celular")
+    else:
+        fuente = 0
+        print("Camara de la laptop, por defecto")
 
     cap = cv2.VideoCapture(fuente)
     
@@ -22,8 +27,9 @@ def main():
 
         data, bbox, _ = lector.detectAndDecode(frame)
 
-        if data:
+       if data and data != ultimo:
             print(f"Mensaje: {data}")
+            ultimo = data
 
         cv2.imshow("Receptor del QR", frame)
 

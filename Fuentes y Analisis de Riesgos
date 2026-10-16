@@ -1,0 +1,26 @@
+                                     Fuentes en formato IEEE
+
+[1]  H. Haas, L. Yin, Y. Wang, and C. Chen, "What is LiFi?," Journal of Lightwave Technology,
+vol. 34, no. 6, pp. 1533–1544, Mar. 2016.
+
+[2]  ISO/IEC, "Information technology — Automatic identification and data capture techniques — 
+QR Code bar code symbology specification," ISO/IEC 18004:2015, 2015.
+
+[3] N. Saha et al., "A review on optical wireless communication: Technical challenges,
+applications, and future trends," IEEE Access, vol. 11, pp. 15200–15220, 2023.
+
+
+                              Análisis de Riesgos (Seguridad y Legalidad)
+
+1. Riesgos operacionales y de seguridad:
+El principal problema técnico durante las pruebas es la pérdida de datos o lecturas malas por
+vibraciones entre la pantalla y la cámara, o por reflejos de luz ambiental. Para evitarlo, 
+pondremos la cámara en una parte rigida y acomodaremos el brillo de la pantalla a un nivel medio-normal 
+para que no moleste visualmente ni tampoco sature en el sensor. Además, los dispositivos  trabajarán con sus 
+adaptadores de corriente estándar de baja tensión.
+
+2. Aspectos legales y normativos:
+como la transmisión se realiza con luz visible (VLC/OWC), el sistema utiliza espectro óptico de libre uso,
+por lo que no ocupa licencias de telecomunicaciones ni tampoco incumple regulaciones de radiofrecuencia del IFT. 
+Toda la información enviada por los códigos QR será solamente con fines de prueba técnica, sin guardar
+ ni procesar datos personales.

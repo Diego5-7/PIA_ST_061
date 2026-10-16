@@ -1,13 +1,15 @@
 import cv2
 
 def main():
-    opcion = input("Elige el número de fuente (0 para laptop, 1 para celular):").strip()
+    opcion = input("Elige el tipo de cámara (0 para laptop, 1 para celular): ").strip()
+    
     if opcion == "1":
         fuente = 1
-        print("Camara de celular")   
+        print("Cámara de celular seleccionada.")
     else:
         fuente = 0
-        print("Camara de la laptop, por defecto")
+        print("Cámara de la laptop seleccionada por defecto.")
+
     cap = cv2.VideoCapture(fuente)
     lector = cv2.QRCodeDetector()
 
@@ -16,6 +18,8 @@ def main():
         return
 
     print("Con la letra 'q' se cierra la ventana.\n")
+
+    ultimo = ""
 
     while True:
         ret, frame = cap.read()

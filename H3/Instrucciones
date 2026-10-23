@@ -1,0 +1,5 @@
+Un mensaje de texto de ≥ 32 caracteres recibido correctamente de principio a fin.
+Trama con preámbulo de sincronización.
+Modulación usada y tasa de bits alcanzada, comparada con el límite de Nyquist del canal.
+Caracterización: nivel recibido contra la distancia (o longitud/curvatura/frecuencia) con ≥ 5 puntos, comparado con el modelo.
+Bitácora del equipo actualizada.

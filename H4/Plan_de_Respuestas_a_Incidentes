@@ -1,0 +1,32 @@
+              Plan de Respuestas a incidentes
+1. Ataque a la Confidencialidad (Chismosos o cámaras no autorizadas)
+	¿Qué pasó?: Hay alguien con un celular o una cámara grabando nuestro código QR sin nuestro permiso para 
+  robarnos la información.
+ -Indicador medible (¿Cómo nos doy cuenta?): identificamos  cualquier cámara extra o persona no 
+  autorizada en la zona de transmisión (1 o más personas o cámaras no permitidas).
+	-Plan de respuesta:
+	Detectar: Mirar si hay alguien raro o una cámara apuntando a la pantalla donde se muestra nuestro código QR.
+	Contener: Cortar la transmisión de inmediato, poner la pantalla en negro y cubrir o restringir el área para 
+  que ya no puedan grabar nada.
+	Recuperar: Acomodar bien el espacio para que nadie pueda asomarse, cambiar las claves secretas y 
+  volver a poner el código QR.
+2. Ataque a la Disponibilidad (Alguien que tapa la luz o echa interferencia)
+	¿Qué pasó?: Hay un foco, una luz mala o una sombra de alguien que no deja que la cámara lea bien el código QR.
+	Indicador medible (¿Cómo nos damos cuenta?): La velocidad de la cámara baja a menos de 15" imágenes por segundo"  (15 fps) o el porcentaje de errores en la lectura sube a más del 15%.
+	Plan de respuesta:
+	Detectar: El sistema empieza a tirar alertas de que el código QR se ve borroso, distorsionado o con muchos errores.
+	Contener: Tapar la luz que está haciendo estorbo o ajustar el brillo y contraste de la cámara para 
+  que vuelva a distinguir los cuadros negros y blancos.
+	Recuperar: Ajustar la velocidad a la que cambia el código QR y confirmar que el inicio del mensaje 
+  (el preámbulo) se vuelva a leer claro.
+3. Ataque a la Integridad (Mensaje falso o modificado)
+	¿Qué pasó?: Le cambiaron datos al código QR y el corrector de errores (Hamming) no pudo arreglarlo, 
+  así que llegó un mensaje falso o modificado.
+	Indicador medible (¿Cómo nos damos cuenta?): Recibimos más de 3 mensajes con error seguidos o la clave 
+  secreta para abrir el mensaje no coincide.
+	Plan de respuesta:
+	Detectar: El receptor detecta que el texto que llegó no tiene sentido o que la clave no encaja con el mensaje.
+	Contener: eliminamos  inmediatamente esos códigos QR o mensajes modificados  para que el sistema no los procese.
+	Recuperar: Pedirle al emisor que mande la señal de inicio otra vez, verificar que la clave sea 
+  la correcta y reiniciar la lectura limpia.
+

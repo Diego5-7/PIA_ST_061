@@ -12,7 +12,8 @@
   volver a poner el código QR.
 2. Ataque a la Disponibilidad (Alguien que tapa la luz o echa interferencia)
 	¿Qué pasó?: Hay un foco, una luz mala o una sombra de alguien que no deja que la cámara lea bien el código QR.
-	Indicador medible (¿Cómo nos damos cuenta?): La velocidad de la cámara baja a menos de 15" imágenes por segundo"  (15 fps) o el porcentaje de errores en la lectura sube a más del 15%.
+	Indicador medible (¿Cómo nos damos cuenta?): La velocidad de la cámara baja a menos de 15" imágenes por segundo"
+    (15 fps) o el porcentaje de errores en la lectura sube a más del 15%.
 	Plan de respuesta:
 	Detectar: El sistema empieza a tirar alertas de que el código QR se ve borroso, distorsionado o con muchos errores.
 	Contener: Tapar la luz que está haciendo estorbo o ajustar el brillo y contraste de la cámara para 
@@ -30,3 +31,7 @@
 	Recuperar: Pedirle al emisor que mande la señal de inicio otra vez, verificar que la clave sea 
   la correcta y reiniciar la lectura limpia.
 
+
+        ( Para armar estos planes nos basamos en las fases de los estándares internacionales de ciberseguridad 
+          (como NIST SP 800-61 (Preparación, Detección y Análisis, Contención, Erradicación y Recuperación)), 
+                  pero adaptadas a nuestro enlace óptico para que sea práctico y fácil de aplicar).
